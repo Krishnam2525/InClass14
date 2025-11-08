@@ -7,34 +7,28 @@ class DefaultFirebaseOptions {
     if (kIsWeb) return web;
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
-        return android;
+        return web;
       case TargetPlatform.iOS:
-        return ios;
+        return web;
       case TargetPlatform.macOS:
-        return macos;
+        return web;
       case TargetPlatform.windows:
-        return windows;
+        return web;
       case TargetPlatform.linux:
-        return linux;
+        return web;
       default:
         return web;
     }
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyCvcoy2E91kKbEw1ma2VpDFbPpKv_evBfS',
-    appId: '1:310947602727:web:669d91794a13616fe89802',
+    apiKey: 'AIzaSyCVCv20j1XdEkmVma2VbPFoPbxR_eVbEfs',
+    appId: '1:310947602727:web:609d19f34a13616fe88902',
     messagingSenderId: '310947602727',
     projectId: 'inclass14-63bce',
     authDomain: 'inclass14-63bce.firebaseapp.com',
     storageBucket: 'inclass14-63bce.firebasestorage.app',
-    measurementId: 'G-RPTJUSZXQ1',
+    measurementId: 'G-RPTJTSZXQ1',
     databaseURL: 'https://inclass14-63bce-default-rtdb.firebaseio.com',
   );
-
-  static const FirebaseOptions android = web;
-  static const FirebaseOptions ios = web;
-  static const FirebaseOptions macos = web;
-  static const FirebaseOptions windows = web;
-  static const FirebaseOptions linux = web;
 }
